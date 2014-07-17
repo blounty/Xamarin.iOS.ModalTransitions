@@ -29,8 +29,6 @@ namespace AnimatedTransitionApp
 
 		public override void AnimateTransition (IUIViewControllerContextTransitioning transitionContext)
 		{
-			Console.WriteLine ("Animate Transition");
-
 			var fromVC = transitionContext.GetViewControllerForKey (UITransitionContext.FromViewControllerKey);
 			var fromView = fromVC.View;
 			var toVC = transitionContext.GetViewControllerForKey (UITransitionContext.ToViewControllerKey);
